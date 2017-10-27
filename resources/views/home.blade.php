@@ -1,7 +1,8 @@
 @extends('template.header')
 
 @section('content')
-    <div class="carousel carousel-slider" style='max-height:700px' style=>
+    <div class="carousel carousel-slider" style='max-height:700px'>
+        <a class="carousel-item" href="#two!"><img src={{ URL::asset("img/Pizzeria.jpg")}}></a>
         <a class="carousel-item" href="#two!"><img src={{ URL::asset("img/carrousel_2.jpg")}}></a>
         <a class="carousel-item" href="#three!"><img src={{ URL::asset("img/carrousel_3.jpg")}}></a>
         <a class="carousel-item" href="#four!"><img src={{ URL::asset("img/carrousel_4.jpg")}}></a>
@@ -9,7 +10,7 @@
     <div class="container">
         <h3 class="center-align black-color">Nos pizzas</h3>
         <div class="col s8 offest-s2">
-       
+
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -96,7 +97,7 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-parent"> 
+        <div class="footer-parent">
             <div>
                 Aliquam dapibus commodo nisl, rhoncus finibus turpis. Nam sit amet dui at dolor egestas cursus. Sed ut ullamcorper ante. Mauris nisi ligula, consequat condimentum dolor quis, congue convallis mauris. In ultrices felis vel accumsan sollicitudin. Sed tincidunt, ipsum id finibus viverra, purus risus semper ipsum, ultricies porta dui velit vitae elit. Mauris vehicula condimentum scelerisque. Vestibulum luctus enim eget nisl mattis malesuada eget et dolor. Mauris rutrum odio a dictum egestas. Nam purus dolor, consequat ut luctus ut, hendrerit non ligula.
             </div>
